@@ -1,0 +1,569 @@
+{
+  "run_id": "run1_core_full",
+  "experiment_name": "Run 1 Core Two-Agent Handoff",
+  "experiment_type": "run1_core",
+  "generated_at_utc": "2026-04-19T17:03:08.487010+00:00",
+  "task_count": 50,
+  "token_efficiency_definition": "Average total tokens per task. Lower values indicate greater token efficiency.",
+  "developer": {
+    "correctness": {
+      "task_count": 50,
+      "pass_count": 41,
+      "fail_count": 9,
+      "correctness_rate": 0.82,
+      "correctness_percent": 82.0,
+      "average_correctness_duration_seconds": 0.08
+    },
+    "tokens": {
+      "average_input_tokens": 297.8,
+      "average_output_tokens": 256.92,
+      "average_total_tokens": 554.72,
+      "total_input_tokens": 14890,
+      "total_output_tokens": 12846,
+      "total_tokens": 27736
+    }
+  },
+  "baseline": {
+    "correctness": {
+      "task_count": 50,
+      "pass_count": 42,
+      "fail_count": 8,
+      "correctness_rate": 0.84,
+      "correctness_percent": 84.0,
+      "average_correctness_duration_seconds": 0.08
+    },
+    "adherence": {
+      "task_count": 50,
+      "pass_count": 18,
+      "fail_count": 32,
+      "constraint_adherence_rate": 0.36,
+      "constraint_adherence_percent": 36.0
+    },
+    "tokens": {
+      "average_input_tokens": 315.62,
+      "average_output_tokens": 240.54,
+      "average_total_tokens": 556.16,
+      "total_input_tokens": 15781,
+      "total_output_tokens": 12027,
+      "total_tokens": 27808
+    },
+    "joint_outcomes": {
+      "counts": {
+        "correct_and_adherent": 16,
+        "correct_not_adherent": 26,
+        "incorrect_adherent": 2,
+        "incorrect_not_adherent": 6
+      },
+      "percents": {
+        "correct_and_adherent": 32.0,
+        "correct_not_adherent": 52.0,
+        "incorrect_adherent": 4.0,
+        "incorrect_not_adherent": 12.0
+      }
+    }
+  },
+  "experimental": {
+    "correctness": {
+      "task_count": 50,
+      "pass_count": 43,
+      "fail_count": 7,
+      "correctness_rate": 0.86,
+      "correctness_percent": 86.0,
+      "average_correctness_duration_seconds": 0.09
+    },
+    "adherence": {
+      "task_count": 50,
+      "pass_count": 35,
+      "fail_count": 15,
+      "constraint_adherence_rate": 0.7,
+      "constraint_adherence_percent": 70.0
+    },
+    "tokens": {
+      "average_input_tokens": 648.14,
+      "average_output_tokens": 281.7,
+      "average_total_tokens": 929.84,
+      "total_input_tokens": 32407,
+      "total_output_tokens": 14085,
+      "total_tokens": 46492
+    },
+    "joint_outcomes": {
+      "counts": {
+        "correct_and_adherent": 31,
+        "correct_not_adherent": 12,
+        "incorrect_adherent": 4,
+        "incorrect_not_adherent": 3
+      },
+      "percents": {
+        "correct_and_adherent": 62.0,
+        "correct_not_adherent": 24.0,
+        "incorrect_adherent": 8.0,
+        "incorrect_not_adherent": 6.0
+      }
+    }
+  },
+  "baseline_vs_experimental": {
+    "correctness_percent_delta": 2.0,
+    "adherence_percent_delta": 34.0,
+    "average_total_tokens_delta": 373.68
+  },
+  "by_constraint_type": {
+    "developer": {
+      "Structural": {
+        "correctness": {
+          "task_count": 17,
+          "pass_count": 14,
+          "fail_count": 3,
+          "correctness_rate": 0.8235,
+          "correctness_percent": 82.35,
+          "average_correctness_duration_seconds": 0.08
+        },
+        "tokens": {
+          "average_input_tokens": 331.41,
+          "average_output_tokens": 290.35,
+          "average_total_tokens": 621.76,
+          "total_input_tokens": 5634,
+          "total_output_tokens": 4936,
+          "total_tokens": 10570
+        }
+      },
+      "Efficiency": {
+        "correctness": {
+          "task_count": 16,
+          "pass_count": 15,
+          "fail_count": 1,
+          "correctness_rate": 0.9375,
+          "correctness_percent": 93.75,
+          "average_correctness_duration_seconds": 0.08
+        },
+        "tokens": {
+          "average_input_tokens": 292.06,
+          "average_output_tokens": 255.88,
+          "average_total_tokens": 547.94,
+          "total_input_tokens": 4673,
+          "total_output_tokens": 4094,
+          "total_tokens": 8767
+        }
+      },
+      "Negative": {
+        "correctness": {
+          "task_count": 17,
+          "pass_count": 12,
+          "fail_count": 5,
+          "correctness_rate": 0.7059,
+          "correctness_percent": 70.59,
+          "average_correctness_duration_seconds": 0.08
+        },
+        "tokens": {
+          "average_input_tokens": 269.59,
+          "average_output_tokens": 224.47,
+          "average_total_tokens": 494.06,
+          "total_input_tokens": 4583,
+          "total_output_tokens": 3816,
+          "total_tokens": 8399
+        }
+      }
+    },
+    "baseline": {
+      "Structural": {
+        "correctness": {
+          "task_count": 17,
+          "pass_count": 13,
+          "fail_count": 4,
+          "correctness_rate": 0.7647,
+          "correctness_percent": 76.47,
+          "average_correctness_duration_seconds": 0.08
+        },
+        "tokens": {
+          "average_input_tokens": 348.88,
+          "average_output_tokens": 205.24,
+          "average_total_tokens": 554.12,
+          "total_input_tokens": 5931,
+          "total_output_tokens": 3489,
+          "total_tokens": 9420
+        },
+        "adherence": {
+          "task_count": 17,
+          "pass_count": 1,
+          "fail_count": 16,
+          "constraint_adherence_rate": 0.0588,
+          "constraint_adherence_percent": 5.88
+        },
+        "joint_outcomes": {
+          "counts": {
+            "correct_and_adherent": 0,
+            "correct_not_adherent": 13,
+            "incorrect_adherent": 1,
+            "incorrect_not_adherent": 3
+          },
+          "percents": {
+            "correct_and_adherent": 0.0,
+            "correct_not_adherent": 76.47,
+            "incorrect_adherent": 5.88,
+            "incorrect_not_adherent": 17.65
+          }
+        }
+      },
+      "Efficiency": {
+        "correctness": {
+          "task_count": 16,
+          "pass_count": 14,
+          "fail_count": 2,
+          "correctness_rate": 0.875,
+          "correctness_percent": 87.5,
+          "average_correctness_duration_seconds": 0.08
+        },
+        "tokens": {
+          "average_input_tokens": 314.94,
+          "average_output_tokens": 240.81,
+          "average_total_tokens": 555.75,
+          "total_input_tokens": 5039,
+          "total_output_tokens": 3853,
+          "total_tokens": 8892
+        },
+        "adherence": {
+          "task_count": 16,
+          "pass_count": 10,
+          "fail_count": 6,
+          "constraint_adherence_rate": 0.625,
+          "constraint_adherence_percent": 62.5
+        },
+        "joint_outcomes": {
+          "counts": {
+            "correct_and_adherent": 9,
+            "correct_not_adherent": 5,
+            "incorrect_adherent": 1,
+            "incorrect_not_adherent": 1
+          },
+          "percents": {
+            "correct_and_adherent": 56.25,
+            "correct_not_adherent": 31.25,
+            "incorrect_adherent": 6.25,
+            "incorrect_not_adherent": 6.25
+          }
+        }
+      },
+      "Negative": {
+        "correctness": {
+          "task_count": 17,
+          "pass_count": 15,
+          "fail_count": 2,
+          "correctness_rate": 0.8824,
+          "correctness_percent": 88.24,
+          "average_correctness_duration_seconds": 0.08
+        },
+        "tokens": {
+          "average_input_tokens": 283.0,
+          "average_output_tokens": 275.59,
+          "average_total_tokens": 558.59,
+          "total_input_tokens": 4811,
+          "total_output_tokens": 4685,
+          "total_tokens": 9496
+        },
+        "adherence": {
+          "task_count": 17,
+          "pass_count": 7,
+          "fail_count": 10,
+          "constraint_adherence_rate": 0.4118,
+          "constraint_adherence_percent": 41.18
+        },
+        "joint_outcomes": {
+          "counts": {
+            "correct_and_adherent": 7,
+            "correct_not_adherent": 8,
+            "incorrect_adherent": 0,
+            "incorrect_not_adherent": 2
+          },
+          "percents": {
+            "correct_and_adherent": 41.18,
+            "correct_not_adherent": 47.06,
+            "incorrect_adherent": 0.0,
+            "incorrect_not_adherent": 11.76
+          }
+        }
+      }
+    },
+    "experimental": {
+      "Structural": {
+        "correctness": {
+          "task_count": 17,
+          "pass_count": 15,
+          "fail_count": 2,
+          "correctness_rate": 0.8824,
+          "correctness_percent": 88.24,
+          "average_correctness_duration_seconds": 0.08
+        },
+        "tokens": {
+          "average_input_tokens": 717.29,
+          "average_output_tokens": 367.82,
+          "average_total_tokens": 1085.12,
+          "total_input_tokens": 12194,
+          "total_output_tokens": 6253,
+          "total_tokens": 18447
+        },
+        "adherence": {
+          "task_count": 17,
+          "pass_count": 13,
+          "fail_count": 4,
+          "constraint_adherence_rate": 0.7647,
+          "constraint_adherence_percent": 76.47
+        },
+        "joint_outcomes": {
+          "counts": {
+            "correct_and_adherent": 12,
+            "correct_not_adherent": 3,
+            "incorrect_adherent": 1,
+            "incorrect_not_adherent": 1
+          },
+          "percents": {
+            "correct_and_adherent": 70.59,
+            "correct_not_adherent": 17.65,
+            "incorrect_adherent": 5.88,
+            "incorrect_not_adherent": 5.88
+          }
+        }
+      },
+      "Efficiency": {
+        "correctness": {
+          "task_count": 16,
+          "pass_count": 13,
+          "fail_count": 3,
+          "correctness_rate": 0.8125,
+          "correctness_percent": 81.25,
+          "average_correctness_duration_seconds": 0.08
+        },
+        "tokens": {
+          "average_input_tokens": 644.25,
+          "average_output_tokens": 213.69,
+          "average_total_tokens": 857.94,
+          "total_input_tokens": 10308,
+          "total_output_tokens": 3419,
+          "total_tokens": 13727
+        },
+        "adherence": {
+          "task_count": 16,
+          "pass_count": 10,
+          "fail_count": 6,
+          "constraint_adherence_rate": 0.625,
+          "constraint_adherence_percent": 62.5
+        },
+        "joint_outcomes": {
+          "counts": {
+            "correct_and_adherent": 9,
+            "correct_not_adherent": 4,
+            "incorrect_adherent": 1,
+            "incorrect_not_adherent": 2
+          },
+          "percents": {
+            "correct_and_adherent": 56.25,
+            "correct_not_adherent": 25.0,
+            "incorrect_adherent": 6.25,
+            "incorrect_not_adherent": 12.5
+          }
+        }
+      },
+      "Negative": {
+        "correctness": {
+          "task_count": 17,
+          "pass_count": 15,
+          "fail_count": 2,
+          "correctness_rate": 0.8824,
+          "correctness_percent": 88.24,
+          "average_correctness_duration_seconds": 0.12
+        },
+        "tokens": {
+          "average_input_tokens": 582.65,
+          "average_output_tokens": 259.59,
+          "average_total_tokens": 842.24,
+          "total_input_tokens": 9905,
+          "total_output_tokens": 4413,
+          "total_tokens": 14318
+        },
+        "adherence": {
+          "task_count": 17,
+          "pass_count": 12,
+          "fail_count": 5,
+          "constraint_adherence_rate": 0.7059,
+          "constraint_adherence_percent": 70.59
+        },
+        "joint_outcomes": {
+          "counts": {
+            "correct_and_adherent": 10,
+            "correct_not_adherent": 5,
+            "incorrect_adherent": 2,
+            "incorrect_not_adherent": 0
+          },
+          "percents": {
+            "correct_and_adherent": 58.82,
+            "correct_not_adherent": 29.41,
+            "incorrect_adherent": 11.76,
+            "incorrect_not_adherent": 0.0
+          }
+        }
+      }
+    }
+  },
+  "token_distributions": {
+    "developer_total_tokens": [
+      459,
+      1447,
+      604,
+      655,
+      928,
+      297,
+      423,
+      343,
+      442,
+      507,
+      460,
+      264,
+      449,
+      550,
+      498,
+      440,
+      510,
+      345,
+      332,
+      333,
+      446,
+      511,
+      599,
+      395,
+      746,
+      620,
+      1046,
+      254,
+      825,
+      911,
+      729,
+      850,
+      642,
+      469,
+      394,
+      817,
+      496,
+      635,
+      512,
+      586,
+      372,
+      590,
+      457,
+      558,
+      480,
+      465,
+      376,
+      523,
+      534,
+      612
+    ],
+    "baseline_total_tokens": [
+      593,
+      1330,
+      384,
+      925,
+      777,
+      397,
+      401,
+      245,
+      240,
+      185,
+      175,
+      185,
+      1225,
+      552,
+      386,
+      451,
+      464,
+      325,
+      346,
+      352,
+      337,
+      640,
+      821,
+      373,
+      909,
+      877,
+      1161,
+      232,
+      972,
+      1021,
+      952,
+      789,
+      661,
+      429,
+      422,
+      741,
+      330,
+      744,
+      558,
+      429,
+      396,
+      439,
+      420,
+      591,
+      551,
+      330,
+      356,
+      434,
+      434,
+      521
+    ],
+    "experimental_total_tokens": [
+      811,
+      1639,
+      1265,
+      827,
+      1665,
+      594,
+      691,
+      681,
+      889,
+      824,
+      604,
+      404,
+      585,
+      954,
+      838,
+      764,
+      851,
+      556,
+      604,
+      601,
+      805,
+      841,
+      976,
+      671,
+      1292,
+      1092,
+      1891,
+      428,
+      1786,
+      1582,
+      1242,
+      1329,
+      981,
+      924,
+      706,
+      1376,
+      765,
+      999,
+      887,
+      877,
+      617,
+      984,
+      980,
+      904,
+      774,
+      747,
+      629,
+      859,
+      824,
+      1077
+    ]
+  },
+  "judge_usage": {
+    "requests": 34,
+    "input_tokens": 12777,
+    "output_tokens": 1584,
+    "total_tokens": 14361
+  }
+}

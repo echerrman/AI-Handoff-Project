@@ -1,0 +1,27 @@
+{
+  "run_id": "run3_ablation_full",
+  "experiment_name": "Run 3 Prompt-Only Ablation",
+  "experiment_type": "run3_ablation",
+  "random_seed": 42,
+  "task_limit": null,
+  "resume": true,
+  "overwrite": false,
+  "source_curated_tasks_path": "D:\\AI-Handoff-Project\\data\\curated_tasks.json",
+  "project_data_dir": "D:\\AI-Handoff-Project\\data",
+  "models": {
+    "developer": "gemini-2.5-flash-lite",
+    "maintainer": "gemini-2.5-flash-lite"
+  },
+  "settings": {
+    "gemini_rate_limit_seconds": 4.5,
+    "hf_home": "D:\\AI-Handoff-Project\\.cache",
+    "hf_datasets_cache": "D:\\AI-Handoff-Project\\.cache"
+  },
+  "experiment_metadata": {
+    "agent_count": 2,
+    "handoff_mode": "developer_to_maintainer",
+    "ablation_flags": {
+      "prompt_only_without_explicit_constraint_field": true
+    }
+  }
+}

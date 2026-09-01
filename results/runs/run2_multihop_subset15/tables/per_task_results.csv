@@ -1,0 +1,16 @@
+task_id,constraint_type,selection_score,developer_correct,developer_status,baseline_correct,baseline_adherent,baseline_joint_outcome,baseline_total_tokens,experimental_correct,experimental_adherent,experimental_joint_outcome,experimental_total_tokens,baseline_method,experimental_method
+HumanEval/31,Structural,22.905,True,passed,True,False,correct_not_adherent,494,True,True,correct_and_adherent,742,deterministic_ast,deterministic_ast
+HumanEval/129,Efficiency,22.418,True,passed,True,True,correct_and_adherent,509,True,False,correct_not_adherent,1338,deterministic_static_heuristic,deterministic_static_heuristic
+HumanEval/109,Structural,21.612,True,passed,True,False,correct_not_adherent,263,True,True,correct_and_adherent,966,deterministic_ast,deterministic_ast
+HumanEval/40,Efficiency,21.491,True,passed,True,False,correct_not_adherent,499,True,False,correct_not_adherent,893,deterministic_static_heuristic,deterministic_static_heuristic
+HumanEval/68,Structural,21.46,True,passed,True,False,correct_not_adherent,249,True,True,correct_and_adherent,919,deterministic_ast,deterministic_ast
+HumanEval/51,Negative,21.438,True,passed,True,False,correct_not_adherent,394,True,True,correct_and_adherent,758,llm_judge,llm_judge
+HumanEval/54,Efficiency,21.352,True,passed,True,True,correct_and_adherent,409,True,True,correct_and_adherent,692,deterministic_static_heuristic,deterministic_static_heuristic
+HumanEval/43,Negative,21.225,True,passed,True,False,correct_not_adherent,233,True,False,correct_not_adherent,878,llm_judge,llm_judge
+HumanEval/32,Efficiency,18.95,False,runtime_error,False,True,incorrect_adherent,731,True,True,correct_and_adherent,1124,deterministic_static_heuristic,deterministic_static_heuristic
+HumanEval/115,Structural,18.938,True,passed,True,False,correct_not_adherent,236,True,True,correct_and_adherent,818,deterministic_ast,deterministic_ast
+HumanEval/159,Structural,18.915,True,passed,True,False,correct_not_adherent,206,True,True,correct_and_adherent,674,deterministic_ast,deterministic_ast
+HumanEval/39,Negative,18.207,True,passed,True,False,correct_not_adherent,368,True,True,correct_and_adherent,741,llm_judge,llm_judge
+HumanEval/153,Negative,17.962,True,passed,False,False,incorrect_not_adherent,254,True,True,correct_and_adherent,762,llm_judge,llm_judge
+HumanEval/10,Negative,17.853,True,passed,True,True,correct_and_adherent,402,True,False,correct_not_adherent,954,llm_judge,llm_judge
+HumanEval/116,Negative,17.745,True,passed,True,False,correct_not_adherent,251,True,True,correct_and_adherent,895,llm_judge,llm_judge

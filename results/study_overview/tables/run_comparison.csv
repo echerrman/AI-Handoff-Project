@@ -1,0 +1,4 @@
+run_id,experiment_name,experiment_type,task_count,baseline_correctness_percent,baseline_adherence_percent,experimental_correctness_percent,experimental_adherence_percent,correctness_delta,adherence_delta,token_delta
+run1_core_full,Run 1 Core Two-Agent Handoff,run1_core,50,84.0,36.0,86.0,70.0,2.0,34.0,373.68
+run2_multihop_subset15,Run 2 Multi-Hop Extension,run2_multihop,15,86.67,26.67,100.0,73.33,13.33,46.66,510.4
+run3_ablation_full,Run 3 Prompt-Only Ablation,run3_ablation,50,98.0,32.0,98.0,30.0,0.0,-2.0,257.66

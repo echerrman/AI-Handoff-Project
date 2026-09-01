@@ -1,0 +1,4 @@
+condition,average_input_tokens,average_output_tokens,average_total_tokens,total_input_tokens,total_output_tokens,total_tokens
+developer,333.0,205.87,538.87,4995,3088,8083
+baseline,215.07,151.47,366.53,3226,2272,5498
+experimental,652.27,224.67,876.93,9784,3370,13154

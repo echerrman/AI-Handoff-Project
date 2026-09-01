@@ -1,0 +1,4 @@
+condition,task_count,correctness_percent,adherence_percent,average_total_tokens
+developer,50,96.0,,506.78
+baseline,50,98.0,32.0,429.48
+experimental,50,98.0,30.0,687.14

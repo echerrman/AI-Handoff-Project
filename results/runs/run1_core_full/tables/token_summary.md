@@ -1,0 +1,5 @@
+| condition | average_input_tokens | average_output_tokens | average_total_tokens | total_input_tokens | total_output_tokens | total_tokens |
+| --- | --- | --- | --- | --- | --- | --- |
+| developer | 297.8 | 256.92 | 554.72 | 14890 | 12846 | 27736 |
+| baseline | 315.62 | 240.54 | 556.16 | 15781 | 12027 | 27808 |
+| experimental | 648.14 | 281.7 | 929.84 | 32407 | 14085 | 46492 |

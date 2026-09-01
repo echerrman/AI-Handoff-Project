@@ -1,0 +1,101 @@
+[
+  {
+    "run_id": "run1_core_full",
+    "experiment_name": "Run 1 Core Two-Agent Handoff",
+    "experiment_type": "run1_core",
+    "condition": "developer",
+    "condition_label": "Developer",
+    "task_count": 50,
+    "correctness_percent": 82.0,
+    "adherence_percent": "",
+    "average_total_tokens": 554.72
+  },
+  {
+    "run_id": "run1_core_full",
+    "experiment_name": "Run 1 Core Two-Agent Handoff",
+    "experiment_type": "run1_core",
+    "condition": "baseline",
+    "condition_label": "Baseline",
+    "task_count": 50,
+    "correctness_percent": 84.0,
+    "adherence_percent": 36.0,
+    "average_total_tokens": 556.16
+  },
+  {
+    "run_id": "run1_core_full",
+    "experiment_name": "Run 1 Core Two-Agent Handoff",
+    "experiment_type": "run1_core",
+    "condition": "experimental",
+    "condition_label": "Context-Aware",
+    "task_count": 50,
+    "correctness_percent": 86.0,
+    "adherence_percent": 70.0,
+    "average_total_tokens": 929.84
+  },
+  {
+    "run_id": "run2_multihop_subset15",
+    "experiment_name": "Run 2 Multi-Hop Extension",
+    "experiment_type": "run2_multihop",
+    "condition": "developer",
+    "condition_label": "Developer",
+    "task_count": 15,
+    "correctness_percent": 93.33,
+    "adherence_percent": "",
+    "average_total_tokens": 538.87
+  },
+  {
+    "run_id": "run2_multihop_subset15",
+    "experiment_name": "Run 2 Multi-Hop Extension",
+    "experiment_type": "run2_multihop",
+    "condition": "baseline",
+    "condition_label": "Baseline Final",
+    "task_count": 15,
+    "correctness_percent": 86.67,
+    "adherence_percent": 26.67,
+    "average_total_tokens": 366.53
+  },
+  {
+    "run_id": "run2_multihop_subset15",
+    "experiment_name": "Run 2 Multi-Hop Extension",
+    "experiment_type": "run2_multihop",
+    "condition": "experimental",
+    "condition_label": "Context-Aware Final",
+    "task_count": 15,
+    "correctness_percent": 100.0,
+    "adherence_percent": 73.33,
+    "average_total_tokens": 876.93
+  },
+  {
+    "run_id": "run3_ablation_full",
+    "experiment_name": "Run 3 Prompt-Only Ablation",
+    "experiment_type": "run3_ablation",
+    "condition": "developer",
+    "condition_label": "Developer",
+    "task_count": 50,
+    "correctness_percent": 96.0,
+    "adherence_percent": "",
+    "average_total_tokens": 506.78
+  },
+  {
+    "run_id": "run3_ablation_full",
+    "experiment_name": "Run 3 Prompt-Only Ablation",
+    "experiment_type": "run3_ablation",
+    "condition": "baseline",
+    "condition_label": "Baseline",
+    "task_count": 50,
+    "correctness_percent": 98.0,
+    "adherence_percent": 32.0,
+    "average_total_tokens": 429.48
+  },
+  {
+    "run_id": "run3_ablation_full",
+    "experiment_name": "Run 3 Prompt-Only Ablation",
+    "experiment_type": "run3_ablation",
+    "condition": "experimental",
+    "condition_label": "Prompt-Only Ablation",
+    "task_count": 50,
+    "correctness_percent": 98.0,
+    "adherence_percent": 30.0,
+    "average_total_tokens": 687.14
+  }
+]

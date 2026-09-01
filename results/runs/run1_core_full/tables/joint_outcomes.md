@@ -1,0 +1,10 @@
+| condition | joint_outcome | count | percent |
+| --- | --- | --- | --- |
+| baseline | correct_and_adherent | 16 | 32.0 |
+| baseline | correct_not_adherent | 26 | 52.0 |
+| baseline | incorrect_adherent | 2 | 4.0 |
+| baseline | incorrect_not_adherent | 6 | 12.0 |
+| experimental | correct_and_adherent | 31 | 62.0 |
+| experimental | correct_not_adherent | 12 | 24.0 |
+| experimental | incorrect_adherent | 4 | 8.0 |
+| experimental | incorrect_not_adherent | 3 | 6.0 |

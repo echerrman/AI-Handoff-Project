@@ -1,0 +1,6 @@
+datasets
+google-genai
+matplotlib
+python-dotenv
+pydantic
+pytest

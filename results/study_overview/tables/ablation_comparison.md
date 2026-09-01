@@ -1,0 +1,4 @@
+| variant | run_id | task_count | correctness_percent | adherence_percent | average_total_tokens |
+| --- | --- | --- | --- | --- | --- |
+| Context-Aware Explicit Constraints | run1_core_full | 50 | 86.0 | 70.0 | 929.84 |
+| Prompt-Only Ablation | run3_ablation_full | 50 | 98.0 | 30.0 | 687.14 |

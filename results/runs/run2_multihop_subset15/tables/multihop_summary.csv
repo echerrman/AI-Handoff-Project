@@ -1,0 +1,5 @@
+condition,hop,task_count,correctness_percent,adherence_percent,average_total_tokens
+baseline,hop_1,15,93.33,26.67,425.93
+baseline,hop_2,15,86.67,26.67,366.53
+experimental,hop_1,15,100.0,66.67,855.0
+experimental,hop_2,15,100.0,73.33,876.93

@@ -1,0 +1,41 @@
+[
+  {
+    "run_id": "run1_core_full",
+    "experiment_name": "Run 1 Core Two-Agent Handoff",
+    "experiment_type": "run1_core",
+    "task_count": 50,
+    "baseline_correctness_percent": 84.0,
+    "baseline_adherence_percent": 36.0,
+    "experimental_correctness_percent": 86.0,
+    "experimental_adherence_percent": 70.0,
+    "correctness_delta": 2.0,
+    "adherence_delta": 34.0,
+    "token_delta": 373.68
+  },
+  {
+    "run_id": "run2_multihop_subset15",
+    "experiment_name": "Run 2 Multi-Hop Extension",
+    "experiment_type": "run2_multihop",
+    "task_count": 15,
+    "baseline_correctness_percent": 86.67,
+    "baseline_adherence_percent": 26.67,
+    "experimental_correctness_percent": 100.0,
+    "experimental_adherence_percent": 73.33,
+    "correctness_delta": 13.33,
+    "adherence_delta": 46.66,
+    "token_delta": 510.4
+  },
+  {
+    "run_id": "run3_ablation_full",
+    "experiment_name": "Run 3 Prompt-Only Ablation",
+    "experiment_type": "run3_ablation",
+    "task_count": 50,
+    "baseline_correctness_percent": 98.0,
+    "baseline_adherence_percent": 32.0,
+    "experimental_correctness_percent": 98.0,
+    "experimental_adherence_percent": 30.0,
+    "correctness_delta": 0.0,
+    "adherence_delta": -2.0,
+    "token_delta": 257.66
+  }
+]

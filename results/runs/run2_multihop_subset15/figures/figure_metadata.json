@@ -1,0 +1,18 @@
+{
+  "adherence_by_constraint_type.png": {
+    "title": "Constraint Adherence by Constraint Type",
+    "caption": "Grouped bar chart comparing baseline and experimental adherence percentages for each constraint type."
+  },
+  "token_usage_boxplot.png": {
+    "title": "Token Usage Distribution",
+    "caption": "Box-and-whisker plot comparing per-task total token usage for baseline and experimental maintainer conditions."
+  },
+  "joint_outcomes.png": {
+    "title": "Joint Correctness and Constraint Adherence Outcomes",
+    "caption": "Grouped bar chart showing counts of tasks in each joint correctness/adherence outcome for baseline and experimental conditions."
+  },
+  "multihop_adherence_by_hop.png": {
+    "title": "Multi-Hop Constraint Adherence by Hop",
+    "caption": "Line chart showing final adherence at each maintainer hop for the baseline and experimental multi-hop pipelines."
+  }
+}

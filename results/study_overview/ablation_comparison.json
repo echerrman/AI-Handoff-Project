@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "Context-Aware Explicit Constraints",
+    "run_id": "run1_core_full",
+    "task_count": 50,
+    "correctness_percent": 86.0,
+    "adherence_percent": 70.0,
+    "average_total_tokens": 929.84
+  },
+  {
+    "variant": "Prompt-Only Ablation",
+    "run_id": "run3_ablation_full",
+    "task_count": 50,
+    "correctness_percent": 98.0,
+    "adherence_percent": 30.0,
+    "average_total_tokens": 687.14
+  }
+]

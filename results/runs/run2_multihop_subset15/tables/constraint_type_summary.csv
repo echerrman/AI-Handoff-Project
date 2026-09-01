@@ -1,0 +1,10 @@
+condition,constraint_type,task_count,correctness_percent,adherence_percent,average_total_tokens
+developer,Structural,5,100.0,,527.4
+developer,Efficiency,4,75.0,,642.25
+developer,Negative,6,100.0,,479.5
+baseline,Structural,5,100.0,0.0,289.6
+baseline,Efficiency,4,75.0,75.0,537.0
+baseline,Negative,6,83.33,16.67,317.0
+experimental,Structural,5,100.0,100.0,823.8
+experimental,Efficiency,4,100.0,50.0,1011.75
+experimental,Negative,6,100.0,66.67,831.33

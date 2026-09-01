@@ -1,0 +1,9 @@
+condition,joint_outcome,count,percent
+baseline,correct_and_adherent,3,20.0
+baseline,correct_not_adherent,10,66.67
+baseline,incorrect_adherent,1,6.67
+baseline,incorrect_not_adherent,1,6.67
+experimental,correct_and_adherent,11,73.33
+experimental,correct_not_adherent,4,26.67
+experimental,incorrect_adherent,0,0.0
+experimental,incorrect_not_adherent,0,0.0

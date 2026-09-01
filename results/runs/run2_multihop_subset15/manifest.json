@@ -1,0 +1,719 @@
+{
+  "run_id": "run2_multihop_subset15",
+  "experiment_name": "Run 2 Multi-Hop Extension",
+  "experiment_type": "run2_multihop",
+  "created_at_utc": "2026-04-19T17:03:09.297470+00:00",
+  "project_root": "D:\\AI-Handoff-Project",
+  "results_root": "D:\\AI-Handoff-Project\\results",
+  "curated_tasks_source_path": "D:\\AI-Handoff-Project\\data\\curated_tasks.json",
+  "random_seed": 42,
+  "cli_args": {
+    "run_id": "run2_multihop_subset15",
+    "experiment_name": "Run 2 Multi-Hop Extension",
+    "experiment_type": "run2_multihop",
+    "limit": 15,
+    "overwrite": false,
+    "resume": true
+  },
+  "model_config": {
+    "developer": "gemini-2.5-flash-lite",
+    "maintainer": "gemini-2.5-flash-lite"
+  },
+  "settings": {
+    "gemini_rate_limit_seconds": 4.5,
+    "random_seed": 42,
+    "hf_home": "D:\\AI-Handoff-Project\\.cache",
+    "hf_datasets_cache": "D:\\AI-Handoff-Project\\.cache"
+  },
+  "environment": {
+    "python_version": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+    "python_executable": "D:\\AI-Handoff-Project\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "package_versions": {
+      "datasets": "4.8.4",
+      "google-genai": "1.73.1",
+      "matplotlib": "3.10.8",
+      "pydantic": "2.13.2",
+      "python-dotenv": "1.2.2",
+      "pytest": "9.0.3"
+    }
+  },
+  "experiment_metadata": {
+    "agent_count": 3,
+    "handoff_mode": "developer_to_maintainer_to_maintainer",
+    "ablation_flags": {}
+  },
+  "status": {
+    "pipeline": "completed",
+    "evaluation": "completed"
+  },
+  "artifacts": {
+    "run_dir": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15",
+    "inputs": {
+      "experiment_config": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\inputs\\experiment_config.json",
+      "curated_tasks_snapshot": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\inputs\\curated_tasks_snapshot.json"
+    },
+    "outputs": {
+      "pipeline_results": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\outputs\\pipeline_results.json",
+      "evaluation_results": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\outputs\\evaluation_results.json",
+      "final_metrics": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\outputs\\final_metrics.json"
+    },
+    "logs": {
+      "pipeline_llm_calls": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\logs\\pipeline_llm_calls.jsonl",
+      "evaluation_llm_calls": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\logs\\evaluation_llm_calls.jsonl"
+    },
+    "tables_dir": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\tables",
+    "figures": {
+      "directory": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\figures",
+      "metadata": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\figures\\figure_metadata.json"
+    },
+    "examples_dir": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\examples",
+    "study_summary": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\study_summary.md",
+    "manual_screenshot_checklist": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\manual_screenshot_checklist.md"
+  },
+  "pipeline_started_at_utc": "2026-04-19T19:01:25.168038+00:00",
+  "pipeline_completed_at_utc": "2026-04-19T19:16:08.173979+00:00",
+  "pipeline_summary": {
+    "task_count": 15,
+    "completed_records": 15,
+    "reused_records": 12,
+    "failed_records": 0,
+    "pipeline_results_path": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\outputs\\pipeline_results.json",
+    "legacy_pipeline_results_path": "D:\\AI-Handoff-Project\\data\\pipeline_results.json"
+  },
+  "evaluation_started_at_utc": "2026-04-19T19:16:08.205764+00:00",
+  "evaluation_completed_at_utc": "2026-04-19T19:52:08.495392+00:00",
+  "evaluation_summary": {
+    "task_count": 15,
+    "evaluation_results_path": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\outputs\\evaluation_results.json",
+    "final_metrics_path": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\outputs\\final_metrics.json",
+    "figure_metadata_path": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\figures\\figure_metadata.json",
+    "study_summary_path": "D:\\AI-Handoff-Project\\results\\runs\\run2_multihop_subset15\\study_summary.md"
+  },
+  "summary": {
+    "run_id": "run2_multihop_subset15",
+    "experiment_name": "Run 2 Multi-Hop Extension",
+    "experiment_type": "run2_multihop",
+    "generated_at_utc": "2026-04-19T19:52:08.023149+00:00",
+    "task_count": 15,
+    "token_efficiency_definition": "Average total tokens per task. Lower values indicate greater token efficiency.",
+    "developer": {
+      "correctness": {
+        "task_count": 15,
+        "pass_count": 14,
+        "fail_count": 1,
+        "correctness_rate": 0.9333,
+        "correctness_percent": 93.33,
+        "average_correctness_duration_seconds": 0.1
+      },
+      "tokens": {
+        "average_input_tokens": 333.0,
+        "average_output_tokens": 205.87,
+        "average_total_tokens": 538.87,
+        "total_input_tokens": 4995,
+        "total_output_tokens": 3088,
+        "total_tokens": 8083
+      }
+    },
+    "baseline": {
+      "correctness": {
+        "task_count": 15,
+        "pass_count": 13,
+        "fail_count": 2,
+        "correctness_rate": 0.8667,
+        "correctness_percent": 86.67,
+        "average_correctness_duration_seconds": 0.08
+      },
+      "adherence": {
+        "task_count": 15,
+        "pass_count": 4,
+        "fail_count": 11,
+        "constraint_adherence_rate": 0.2667,
+        "constraint_adherence_percent": 26.67
+      },
+      "tokens": {
+        "average_input_tokens": 215.07,
+        "average_output_tokens": 151.47,
+        "average_total_tokens": 366.53,
+        "total_input_tokens": 3226,
+        "total_output_tokens": 2272,
+        "total_tokens": 5498
+      },
+      "joint_outcomes": {
+        "counts": {
+          "correct_and_adherent": 3,
+          "correct_not_adherent": 10,
+          "incorrect_adherent": 1,
+          "incorrect_not_adherent": 1
+        },
+        "percents": {
+          "correct_and_adherent": 20.0,
+          "correct_not_adherent": 66.67,
+          "incorrect_adherent": 6.67,
+          "incorrect_not_adherent": 6.67
+        }
+      }
+    },
+    "experimental": {
+      "correctness": {
+        "task_count": 15,
+        "pass_count": 15,
+        "fail_count": 0,
+        "correctness_rate": 1.0,
+        "correctness_percent": 100.0,
+        "average_correctness_duration_seconds": 0.09
+      },
+      "adherence": {
+        "task_count": 15,
+        "pass_count": 11,
+        "fail_count": 4,
+        "constraint_adherence_rate": 0.7333,
+        "constraint_adherence_percent": 73.33
+      },
+      "tokens": {
+        "average_input_tokens": 652.27,
+        "average_output_tokens": 224.67,
+        "average_total_tokens": 876.93,
+        "total_input_tokens": 9784,
+        "total_output_tokens": 3370,
+        "total_tokens": 13154
+      },
+      "joint_outcomes": {
+        "counts": {
+          "correct_and_adherent": 11,
+          "correct_not_adherent": 4,
+          "incorrect_adherent": 0,
+          "incorrect_not_adherent": 0
+        },
+        "percents": {
+          "correct_and_adherent": 73.33,
+          "correct_not_adherent": 26.67,
+          "incorrect_adherent": 0.0,
+          "incorrect_not_adherent": 0.0
+        }
+      }
+    },
+    "baseline_vs_experimental": {
+      "correctness_percent_delta": 13.33,
+      "adherence_percent_delta": 46.66,
+      "average_total_tokens_delta": 510.4
+    },
+    "by_constraint_type": {
+      "developer": {
+        "Structural": {
+          "correctness": {
+            "task_count": 5,
+            "pass_count": 5,
+            "fail_count": 0,
+            "correctness_rate": 1.0,
+            "correctness_percent": 100.0,
+            "average_correctness_duration_seconds": 0.13
+          },
+          "tokens": {
+            "average_input_tokens": 384.4,
+            "average_output_tokens": 143.0,
+            "average_total_tokens": 527.4,
+            "total_input_tokens": 1922,
+            "total_output_tokens": 715,
+            "total_tokens": 2637
+          }
+        },
+        "Efficiency": {
+          "correctness": {
+            "task_count": 4,
+            "pass_count": 3,
+            "fail_count": 1,
+            "correctness_rate": 0.75,
+            "correctness_percent": 75.0,
+            "average_correctness_duration_seconds": 0.08
+          },
+          "tokens": {
+            "average_input_tokens": 360.5,
+            "average_output_tokens": 281.75,
+            "average_total_tokens": 642.25,
+            "total_input_tokens": 1442,
+            "total_output_tokens": 1127,
+            "total_tokens": 2569
+          }
+        },
+        "Negative": {
+          "correctness": {
+            "task_count": 6,
+            "pass_count": 6,
+            "fail_count": 0,
+            "correctness_rate": 1.0,
+            "correctness_percent": 100.0,
+            "average_correctness_duration_seconds": 0.08
+          },
+          "tokens": {
+            "average_input_tokens": 271.83,
+            "average_output_tokens": 207.67,
+            "average_total_tokens": 479.5,
+            "total_input_tokens": 1631,
+            "total_output_tokens": 1246,
+            "total_tokens": 2877
+          }
+        }
+      },
+      "baseline": {
+        "Structural": {
+          "correctness": {
+            "task_count": 5,
+            "pass_count": 5,
+            "fail_count": 0,
+            "correctness_rate": 1.0,
+            "correctness_percent": 100.0,
+            "average_correctness_duration_seconds": 0.07
+          },
+          "tokens": {
+            "average_input_tokens": 181.4,
+            "average_output_tokens": 108.2,
+            "average_total_tokens": 289.6,
+            "total_input_tokens": 907,
+            "total_output_tokens": 541,
+            "total_tokens": 1448
+          },
+          "adherence": {
+            "task_count": 5,
+            "pass_count": 0,
+            "fail_count": 5,
+            "constraint_adherence_rate": 0.0,
+            "constraint_adherence_percent": 0.0
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 0,
+              "correct_not_adherent": 5,
+              "incorrect_adherent": 0,
+              "incorrect_not_adherent": 0
+            },
+            "percents": {
+              "correct_and_adherent": 0.0,
+              "correct_not_adherent": 100.0,
+              "incorrect_adherent": 0.0,
+              "incorrect_not_adherent": 0.0
+            }
+          }
+        },
+        "Efficiency": {
+          "correctness": {
+            "task_count": 4,
+            "pass_count": 3,
+            "fail_count": 1,
+            "correctness_rate": 0.75,
+            "correctness_percent": 75.0,
+            "average_correctness_duration_seconds": 0.08
+          },
+          "tokens": {
+            "average_input_tokens": 295.0,
+            "average_output_tokens": 242.0,
+            "average_total_tokens": 537.0,
+            "total_input_tokens": 1180,
+            "total_output_tokens": 968,
+            "total_tokens": 2148
+          },
+          "adherence": {
+            "task_count": 4,
+            "pass_count": 3,
+            "fail_count": 1,
+            "constraint_adherence_rate": 0.75,
+            "constraint_adherence_percent": 75.0
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 2,
+              "correct_not_adherent": 1,
+              "incorrect_adherent": 1,
+              "incorrect_not_adherent": 0
+            },
+            "percents": {
+              "correct_and_adherent": 50.0,
+              "correct_not_adherent": 25.0,
+              "incorrect_adherent": 25.0,
+              "incorrect_not_adherent": 0.0
+            }
+          }
+        },
+        "Negative": {
+          "correctness": {
+            "task_count": 6,
+            "pass_count": 5,
+            "fail_count": 1,
+            "correctness_rate": 0.8333,
+            "correctness_percent": 83.33,
+            "average_correctness_duration_seconds": 0.07
+          },
+          "tokens": {
+            "average_input_tokens": 189.83,
+            "average_output_tokens": 127.17,
+            "average_total_tokens": 317.0,
+            "total_input_tokens": 1139,
+            "total_output_tokens": 763,
+            "total_tokens": 1902
+          },
+          "adherence": {
+            "task_count": 6,
+            "pass_count": 1,
+            "fail_count": 5,
+            "constraint_adherence_rate": 0.1667,
+            "constraint_adherence_percent": 16.67
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 1,
+              "correct_not_adherent": 4,
+              "incorrect_adherent": 0,
+              "incorrect_not_adherent": 1
+            },
+            "percents": {
+              "correct_and_adherent": 16.67,
+              "correct_not_adherent": 66.67,
+              "incorrect_adherent": 0.0,
+              "incorrect_not_adherent": 16.67
+            }
+          }
+        }
+      },
+      "experimental": {
+        "Structural": {
+          "correctness": {
+            "task_count": 5,
+            "pass_count": 5,
+            "fail_count": 0,
+            "correctness_rate": 1.0,
+            "correctness_percent": 100.0,
+            "average_correctness_duration_seconds": 0.07
+          },
+          "tokens": {
+            "average_input_tokens": 653.6,
+            "average_output_tokens": 170.2,
+            "average_total_tokens": 823.8,
+            "total_input_tokens": 3268,
+            "total_output_tokens": 851,
+            "total_tokens": 4119
+          },
+          "adherence": {
+            "task_count": 5,
+            "pass_count": 5,
+            "fail_count": 0,
+            "constraint_adherence_rate": 1.0,
+            "constraint_adherence_percent": 100.0
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 5,
+              "correct_not_adherent": 0,
+              "incorrect_adherent": 0,
+              "incorrect_not_adherent": 0
+            },
+            "percents": {
+              "correct_and_adherent": 100.0,
+              "correct_not_adherent": 0.0,
+              "incorrect_adherent": 0.0,
+              "incorrect_not_adherent": 0.0
+            }
+          }
+        },
+        "Efficiency": {
+          "correctness": {
+            "task_count": 4,
+            "pass_count": 4,
+            "fail_count": 0,
+            "correctness_rate": 1.0,
+            "correctness_percent": 100.0,
+            "average_correctness_duration_seconds": 0.08
+          },
+          "tokens": {
+            "average_input_tokens": 731.0,
+            "average_output_tokens": 280.75,
+            "average_total_tokens": 1011.75,
+            "total_input_tokens": 2924,
+            "total_output_tokens": 1123,
+            "total_tokens": 4047
+          },
+          "adherence": {
+            "task_count": 4,
+            "pass_count": 2,
+            "fail_count": 2,
+            "constraint_adherence_rate": 0.5,
+            "constraint_adherence_percent": 50.0
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 2,
+              "correct_not_adherent": 2,
+              "incorrect_adherent": 0,
+              "incorrect_not_adherent": 0
+            },
+            "percents": {
+              "correct_and_adherent": 50.0,
+              "correct_not_adherent": 50.0,
+              "incorrect_adherent": 0.0,
+              "incorrect_not_adherent": 0.0
+            }
+          }
+        },
+        "Negative": {
+          "correctness": {
+            "task_count": 6,
+            "pass_count": 6,
+            "fail_count": 0,
+            "correctness_rate": 1.0,
+            "correctness_percent": 100.0,
+            "average_correctness_duration_seconds": 0.11
+          },
+          "tokens": {
+            "average_input_tokens": 598.67,
+            "average_output_tokens": 232.67,
+            "average_total_tokens": 831.33,
+            "total_input_tokens": 3592,
+            "total_output_tokens": 1396,
+            "total_tokens": 4988
+          },
+          "adherence": {
+            "task_count": 6,
+            "pass_count": 4,
+            "fail_count": 2,
+            "constraint_adherence_rate": 0.6667,
+            "constraint_adherence_percent": 66.67
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 4,
+              "correct_not_adherent": 2,
+              "incorrect_adherent": 0,
+              "incorrect_not_adherent": 0
+            },
+            "percents": {
+              "correct_and_adherent": 66.67,
+              "correct_not_adherent": 33.33,
+              "incorrect_adherent": 0.0,
+              "incorrect_not_adherent": 0.0
+            }
+          }
+        }
+      }
+    },
+    "token_distributions": {
+      "developer_total_tokens": [
+        431,
+        834,
+        604,
+        576,
+        571,
+        442,
+        423,
+        533,
+        736,
+        571,
+        460,
+        328,
+        526,
+        550,
+        498
+      ],
+      "baseline_total_tokens": [
+        494,
+        509,
+        263,
+        499,
+        249,
+        394,
+        409,
+        233,
+        731,
+        236,
+        206,
+        368,
+        254,
+        402,
+        251
+      ],
+      "experimental_total_tokens": [
+        742,
+        1338,
+        966,
+        893,
+        919,
+        758,
+        692,
+        878,
+        1124,
+        818,
+        674,
+        741,
+        762,
+        954,
+        895
+      ]
+    },
+    "judge_usage": {
+      "requests": 36,
+      "input_tokens": 10417,
+      "output_tokens": 1688,
+      "total_tokens": 12105
+    },
+    "multihop": {
+      "baseline": {
+        "hop_1": {
+          "correctness": {
+            "task_count": 15,
+            "pass_count": 14,
+            "fail_count": 1,
+            "correctness_rate": 0.9333,
+            "correctness_percent": 93.33,
+            "average_correctness_duration_seconds": 0.09
+          },
+          "adherence": {
+            "task_count": 15,
+            "pass_count": 4,
+            "fail_count": 11,
+            "constraint_adherence_rate": 0.2667,
+            "constraint_adherence_percent": 26.67
+          },
+          "tokens": {
+            "average_input_tokens": 265.87,
+            "average_output_tokens": 160.07,
+            "average_total_tokens": 425.93,
+            "total_input_tokens": 3988,
+            "total_output_tokens": 2401,
+            "total_tokens": 6389
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 3,
+              "correct_not_adherent": 11,
+              "incorrect_adherent": 1,
+              "incorrect_not_adherent": 0
+            },
+            "percents": {
+              "correct_and_adherent": 20.0,
+              "correct_not_adherent": 73.33,
+              "incorrect_adherent": 6.67,
+              "incorrect_not_adherent": 0.0
+            }
+          }
+        },
+        "hop_2": {
+          "correctness": {
+            "task_count": 15,
+            "pass_count": 13,
+            "fail_count": 2,
+            "correctness_rate": 0.8667,
+            "correctness_percent": 86.67,
+            "average_correctness_duration_seconds": 0.09
+          },
+          "adherence": {
+            "task_count": 15,
+            "pass_count": 4,
+            "fail_count": 11,
+            "constraint_adherence_rate": 0.2667,
+            "constraint_adherence_percent": 26.67
+          },
+          "tokens": {
+            "average_input_tokens": 215.07,
+            "average_output_tokens": 151.47,
+            "average_total_tokens": 366.53,
+            "total_input_tokens": 3226,
+            "total_output_tokens": 2272,
+            "total_tokens": 5498
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 3,
+              "correct_not_adherent": 10,
+              "incorrect_adherent": 1,
+              "incorrect_not_adherent": 1
+            },
+            "percents": {
+              "correct_and_adherent": 20.0,
+              "correct_not_adherent": 66.67,
+              "incorrect_adherent": 6.67,
+              "incorrect_not_adherent": 6.67
+            }
+          }
+        }
+      },
+      "experimental": {
+        "hop_1": {
+          "correctness": {
+            "task_count": 15,
+            "pass_count": 15,
+            "fail_count": 0,
+            "correctness_rate": 1.0,
+            "correctness_percent": 100.0,
+            "average_correctness_duration_seconds": 0.09
+          },
+          "adherence": {
+            "task_count": 15,
+            "pass_count": 10,
+            "fail_count": 5,
+            "constraint_adherence_rate": 0.6667,
+            "constraint_adherence_percent": 66.67
+          },
+          "tokens": {
+            "average_input_tokens": 633.53,
+            "average_output_tokens": 221.47,
+            "average_total_tokens": 855.0,
+            "total_input_tokens": 9503,
+            "total_output_tokens": 3322,
+            "total_tokens": 12825
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 10,
+              "correct_not_adherent": 5,
+              "incorrect_adherent": 0,
+              "incorrect_not_adherent": 0
+            },
+            "percents": {
+              "correct_and_adherent": 66.67,
+              "correct_not_adherent": 33.33,
+              "incorrect_adherent": 0.0,
+              "incorrect_not_adherent": 0.0
+            }
+          }
+        },
+        "hop_2": {
+          "correctness": {
+            "task_count": 15,
+            "pass_count": 15,
+            "fail_count": 0,
+            "correctness_rate": 1.0,
+            "correctness_percent": 100.0,
+            "average_correctness_duration_seconds": 0.09
+          },
+          "adherence": {
+            "task_count": 15,
+            "pass_count": 11,
+            "fail_count": 4,
+            "constraint_adherence_rate": 0.7333,
+            "constraint_adherence_percent": 73.33
+          },
+          "tokens": {
+            "average_input_tokens": 652.27,
+            "average_output_tokens": 224.67,
+            "average_total_tokens": 876.93,
+            "total_input_tokens": 9784,
+            "total_output_tokens": 3370,
+            "total_tokens": 13154
+          },
+          "joint_outcomes": {
+            "counts": {
+              "correct_and_adherent": 11,
+              "correct_not_adherent": 4,
+              "incorrect_adherent": 0,
+              "incorrect_not_adherent": 0
+            },
+            "percents": {
+              "correct_and_adherent": 73.33,
+              "correct_not_adherent": 26.67,
+              "incorrect_adherent": 0.0,
+              "incorrect_not_adherent": 0.0
+            }
+          }
+        }
+      }
+    }
+  }
+}

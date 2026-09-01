@@ -1,0 +1,14 @@
+{
+  "cross_run_adherence.png": {
+    "title": "Cross-Run Constraint Adherence Comparison",
+    "caption": "Grouped bar chart comparing final baseline and experimental adherence percentages across Run 1, Run 2, and Run 3."
+  },
+  "cross_run_correctness.png": {
+    "title": "Cross-Run Correctness Comparison",
+    "caption": "Grouped bar chart comparing final baseline and experimental correctness percentages across Run 1, Run 2, and Run 3."
+  },
+  "ablation_comparison.png": {
+    "title": "Ablation Comparison",
+    "caption": "Side-by-side charts comparing the Run 1 context-aware experimental condition to the Run 3 prompt-only ablation on adherence and token usage."
+  }
+}
